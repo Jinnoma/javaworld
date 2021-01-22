@@ -26,6 +26,7 @@ public class ToadstoolTests {
     public void wolfAttackToadstool() {
         Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(1, 0), world);
         world.addOrganism(wolf);
+        System.out.println(world);
 
         world.makeTurn();
 

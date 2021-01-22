@@ -14,7 +14,7 @@ public class SheepTests {
     }
 
     @Test
-    public void sheepEatingGrass() {
+    public void sheepEatGrass() {
         Organism grass = OrganismsFactory.getOrganism("Grass", new Position(1,0), world);
         world.addOrganism(grass);
 
@@ -25,10 +25,9 @@ public class SheepTests {
     }
 
     @Test
-    public void sheepEatingDandelion() {
+    public void sheepEatDandelion() {
         Organism dandelion = OrganismsFactory.getOrganism("Dandelion", new Position(1,0), world);
         world.addOrganism(dandelion);
-
         world.makeTurn();
 
         int result = world.getOrganisms().size();
@@ -36,7 +35,7 @@ public class SheepTests {
     }
 
     @Test
-    public void wolfAttackSheep() {
+    public void wolfEatSheep() {
         Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(1,0), world);
         world.addOrganism(wolf);
 
