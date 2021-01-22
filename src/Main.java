@@ -13,7 +13,7 @@ public class Main {
         Organism dandelion = OrganismsFactory.getOrganism("Dandelion", new Position(0, 4), world);
         world.addOrganism(dandelion);
 
-        Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(6, 6), world);
+        Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(7, 7), world);
         world.addOrganism(wolf);
 
         Organism toadstool = OrganismsFactory.getOrganism("Toadstool", new Position(4, 4), world);
