@@ -231,7 +231,7 @@ public class World {
 
         for (Position field : fields) {
             pomOrg = this.getOrganismFromPosition(field);
-            if (pomOrg != null && pomOrg.getClass() != species) {
+            if (pomOrg == null || pomOrg.getClass() != species) {
                 result.add(field);
             }
         }
