@@ -18,20 +18,19 @@ public class ToadstoolTests {
         for (int i = 0; i < 10; i++) {
             world.makeTurn();
         }
-        int organismsAmount = world.getOrganisms().size();
-        assertEquals(1, organismsAmount);
+        int organisms = world.getOrganisms().size();
+        assertEquals(1, organisms);
     }
 
     @Test
     public void wolfAttackToadstool() {
         Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(1, 0), world);
         world.addOrganism(wolf);
-        System.out.println(world);
 
         world.makeTurn();
 
-        int organismsAmount = world.getOrganisms().size();
-        assertEquals(0, organismsAmount);
+        int organisms = world.getOrganisms().size();
+        assertEquals(0, organisms);
     }
 
     @Test
@@ -41,7 +40,7 @@ public class ToadstoolTests {
 
         world.makeTurn();
 
-        int organismsAmount = world.getOrganisms().size();
-        assertEquals(0, organismsAmount);
+        int organisms = world.getOrganisms().size();
+        assertEquals(0, organisms);
     }
 }

@@ -32,7 +32,7 @@ public class Action {
         String className = this.organism.getClass().getSimpleName();
 
         return switch (action) {
-            case ADD -> String.format("%s add at %s", className, this.position);
+            case ADD -> String.format("%s add at: %s", className, this.position);
             case INCREASEPOWER -> String.format("%s increase power: %s", className, this.position);
             case MOVE -> String.format("%s move from: %s to: %s", className, this.organism.getPosition(), this.position);
             case REMOVE -> String.format("%s remove from: %s", className, this.organism.getPosition());

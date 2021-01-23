@@ -38,7 +38,6 @@ public class SheepTests {
     public void wolfEatSheep() {
         Organism wolf = OrganismsFactory.getOrganism("Wolf", new Position(1,0), world);
         world.addOrganism(wolf);
-
         world.makeTurn();
 
         String result = world.getOrganisms().get(0).getSign();

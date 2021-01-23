@@ -21,6 +21,7 @@ public class Wolf extends Animal {
     }
     @Override
     public ArrayList<Position> getNeighboringPositions() {
-        return this.getWorld().filterPositionsWithOtherSpecies(this.getWorld().getNeighboringPositions(this.getPosition()), Wolf.class);
+        return this.getWorld().filterPositionsWithOtherSpecies
+                (this.getWorld().getNeighboringPositions(this.getPosition()), Wolf.class);
     }
 }
